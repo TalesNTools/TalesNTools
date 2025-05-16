@@ -14,9 +14,7 @@
 
 .blog-sidebar input,
 .blog-sidebar select {
-  width: 50%;           /* ⬅️ shrink width to ~50% of sidebar */
-  min-width: 140px;     /* ⬅️ prevent getting too narrow */
-  max-width: 200px;     /* ⬅️ cap maximum */
+  width: 140px;     /* ⬅️ prevent getting too narrow */
   text-align: center;
 }
 
