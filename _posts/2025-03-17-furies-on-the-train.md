@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “I Took the Train Home… But the Furies Were Waiting”
+title: “What awaits you on the Furies' train to Tartarus?”
 date: 2025-03-17
 categories: [Creative Spark, Myth-Inspired Fiction]
 ---
