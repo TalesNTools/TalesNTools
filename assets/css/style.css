@@ -17,10 +17,13 @@ body {
 }
 
 main {
-  flex: 1;
+  flex-grow: 1;
   padding: 60px 20px;
   max-width: 800px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
