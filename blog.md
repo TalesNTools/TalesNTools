@@ -6,45 +6,48 @@ permalink: /blog/
 
 <h2>Blog</h2>
 
-<div class="blog-filters">
-  <input type="text" id="searchBox" placeholder="Search posts..." />
+<div class="blog-layout">
+  <aside class="blog-sidebar">
+    <input type="text" id="searchBox" placeholder="Search posts..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      {% assign all_categories = "" | split: "" %}
+      {% for post in site.posts %}
+        {% assign all_categories = all_categories | concat: post.categories %}
+      {% endfor %}
+      {% assign unique_categories = all_categories | uniq | sort %}
+      {% for category in unique_categories %}
+        {% unless category == "" %}
+          <option value="{{ category | downcase }}">{{ category }}</option>
+        {% endunless %}
+      {% endfor %}
+    </select>
+  </aside>
 
-  <select id="categoryFilter">
-    <option value="all">All Categories</option>
-    {% assign all_categories = "" | split: "" %}
-    {% for post in site.posts %}
-      {% assign all_categories = all_categories | concat: post.categories %}
-    {% endfor %}
-    {% assign unique_categories = all_categories | uniq | sort %}
-    {% for category in unique_categories %}
-      {% unless category == "" %}
-        <option value="{{ category | downcase }}">{{ category }}</option>
-      {% endunless %}
-    {% endfor %}
-  </select>
+  <section class="blog-posts">
+    <ul id="postsList">
+      {% for post in site.posts %}
+        <li 
+          data-title="{{ post.title | downcase | escape }}" 
+          data-categories="{{ post.categories | join: ',' | downcase }}">
+          
+          {% if post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }} image">
+          {% endif %}
+
+          <a href="{{ post.url }}">{{ post.title }}</a> – 
+          <small>{{ post.date | date_to_string }}</small>
+
+          {% if post.teaser %}
+            <p>{{ post.teaser }}</p>
+          {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 30, "..." }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
-
-<ul id="postsList">
-  {% for post in site.posts %}
-    <li 
-      data-title="{{ post.title | downcase | escape }}" 
-      data-categories="{{ post.categories | join: ',' | downcase }}">
-      
-      {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }} image">
-      {% endif %}
-
-      <a href="{{ post.url }}">{{ post.title }}</a> – 
-      <small>{{ post.date | date_to_string }}</small>
-
-      {% if post.teaser %}
-        <p>{{ post.teaser }}</p>
-      {% else %}
-        <p>{{ post.content | strip_html | truncatewords: 30, "..." }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
 
 <script>
   const searchBox = document.getElementById("searchBox");
