@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Why can't he leave the hospital despite being discharged?”
+title: “Why Can’t He Leave the Hospital Despite Being Discharged?"
 date: 2025-03-16
 author: Tales N Tools
 categories: [Creative Spark, Myth-Inspired Fiction]
