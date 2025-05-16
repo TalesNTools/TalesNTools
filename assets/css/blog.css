@@ -4,11 +4,11 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
+  align-items: flex-start;
 }
 
 .blog-sidebar {
-  flex: 1;
-  max-width: 250px;
+  flex: 0 0 250px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -21,10 +21,11 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   background-color: #f9f9f9;
+  width: 100%;
 }
 
 .blog-posts {
-  flex: 3;
+  flex: 1;
 }
 
 #postsList {
@@ -40,7 +41,7 @@
   background: #fff;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 #postsList li img {
@@ -49,4 +50,19 @@
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .blog-layout {
+    flex-direction: column;
+  }
+
+  .blog-sidebar {
+    max-width: 100%;
+    flex: none;
+  }
+
+  #postsList {
+    grid-template-columns: 1fr;
+  }
 }
