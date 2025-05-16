@@ -74,6 +74,7 @@ permalink: /blog/
       data-categories="{{ post.categories | join: ',' | downcase }}">
       <a href="{{ post.url }}">{{ post.title }}</a> – 
       <small>{{ post.date | date_to_string }}</small>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
     </li>
   {% endfor %}
 </ul>
