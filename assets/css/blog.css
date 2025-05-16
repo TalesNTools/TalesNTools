@@ -1,11 +1,9 @@
 .blog-layout {
-  display: flex;
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  align-items: flex-start;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(-50vw + 50%);
 }
+
 
 .blog-sidebar {
   flex: 0 0 250px;
