@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "When I Was Visited by the Dryad"
-subtitle: "Today’s Creative Spark (#3) — Inspired by Greek Mythology"
-date: 2025-05-18
+date: 2025-03-19
 categories: ["Creative Spark", "Myth-Inspired Fiction"]
-photo_credit: "Photo by Kotenko on Deposit Photos"
 ---
+*Photo by Kotenko on Deposit Photos*
+
+## Today’s Creative Spark (#1) — Inspired by Greek Mythology
 
 As I sit on the sofa, the wind rattles branches against the windows, their scraping making it hard to hear the TV. I reach for the remote and turn the volume up louder.
 
