@@ -46,8 +46,8 @@
 
 #postsList li img {
   width: 100%;
-  height: auto;
-  max-width: none; /* ensures it can grow with container */
+  height: 300px; /* Adjust to your preference */
+  object-fit: cover;  /* This crops while preserving aspect ratio */
   border-radius: 8px;
   margin-bottom: 0.5rem;
   display: block;
