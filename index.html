@@ -4,59 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tales N Tools | YA & Dark Fantasy Romance</title>
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --gold: #d4af37;
+      --dark-bg: #0b0b0b;
+      --mid-bg: #1a1a1a;
+      --light-text: #eee;
+      --muted-text: #aaa;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
-      color: #eee;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--light-text);
       line-height: 1.6;
     }
+
     header {
-      background: #222;
-      padding: 20px;
+      background: var(--mid-bg);
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 0 10px var(--gold);
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      color: var(--gold);
     }
+
+    header p {
+      margin-top: 10px;
+      color: var(--muted-text);
+      font-size: 1.1em;
+    }
+
     nav {
-      background: #333;
+      background: #121212;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 10px;
+      gap: 40px;
+      padding: 15px;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
     }
+
     nav a {
-      color: #eee;
+      color: var(--light-text);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: relative;
+      transition: color 0.3s ease;
     }
+
+    nav a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: var(--gold);
+      width: 0;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
     nav a:hover {
-      color: #ffa500;
+      color: var(--gold);
     }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
     main {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 800px;
       margin: auto;
     }
+
+    h2 {
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+
     .book-links a {
       display: block;
-      margin: 10px 0;
-      color: #ffa500;
+      margin: 12px 0;
+      color: var(--gold);
+      font-weight: bold;
       text-decoration: none;
+      transition: opacity 0.3s ease;
     }
+
     .book-links a:hover {
-      text-decoration: underline;
+      opacity: 0.7;
     }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #aaa;
+      padding: 30px 20px;
+      background: var(--mid-bg);
+      color: var(--muted-text);
       font-size: 0.9em;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
@@ -78,7 +133,7 @@
     <p>Enter a world where destinies collide, love defies the gods, and fantasy breathes life into every page. Follow for book updates, new stories, and glimpses into the worlds behind the words.</p>
 
     <section class="book-links">
-      <h3>Featured Books</h3>
+      <h3 style="color: var(--gold); margin-top: 30px;">Featured Books</h3>
       <a href="https://amazon.com/dp/EXAMPLE1" target="_blank">Marked by Aphrodite (Amazon)</a>
       <a href="https://amazon.com/dp/EXAMPLE2" target="_blank">Desire (Amazon)</a>
     </section>
