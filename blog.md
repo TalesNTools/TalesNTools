@@ -8,6 +8,7 @@ permalink: /blog/
 
 <div class="blog-layout">
   <aside class="blog-sidebar">
+    <h3>Filter</h3>
     <input type="text" id="searchBox" placeholder="Search posts..." />
     <select id="categoryFilter">
       <option value="all">All Categories</option>
@@ -48,7 +49,6 @@ permalink: /blog/
     </ul>
   </section>
 </div>
-
 
 <script>
   const searchBox = document.getElementById("searchBox");
