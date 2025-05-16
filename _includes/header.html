@@ -1,12 +1,14 @@
-<header>
-  <h1>Tales N Tools</h1>
+<header class="site-header">
+  <a href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/images/posts/Header-Logo.webp' | relative_url }}" alt="Tales N Tools Logo" class="site-logo">
+  </a>
   <p>Author of Young Adult & Dark Fantasy Romance</p>
 </header>
 
 <nav>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/books/">Books</a>
-  <a href="/blog/">Blog</a>
-  <a href="/software/">Software</a>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+  <a href="{{ '/books/' | relative_url }}">Books</a>
+  <a href="{{ '/blog/' | relative_url }}">Blog</a>
+  <a href="{{ '/software/' | relative_url }}">Software</a>
 </nav>
