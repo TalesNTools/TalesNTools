@@ -45,7 +45,8 @@
       background: #121212;
       display: flex;
       justify-content: center;
-      gap: 40px;
+      flex-wrap: wrap;
+      gap: 30px;
       padding: 15px;
       border-top: 1px solid #222;
       border-bottom: 1px solid #222;
@@ -114,7 +115,7 @@
       border-top: 1px solid #222;
     }
 
-    /* Floating Subscribe Panel */
+    /* Floating Subscribe Button */
     #subscribe-toggle {
       position: fixed;
       right: 0;
@@ -129,24 +130,33 @@
       box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
     }
 
+    /* Subscribe Panel (Desktop default: right slide-in) */
     #subscribe-panel {
       position: fixed;
-      right: -320px;
-      top: 30%;
-      width: 300px;
       background: var(--mid-bg);
-      padding: 20px;
-      border-radius: 8px 0 0 8px;
-      box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.6);
       color: #eee;
+      padding: 20px;
+      width: 300px;
+      max-width: 100%;
+      box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.6);
       z-index: 999;
-      transition: right 0.4s ease;
+      transition: transform 0.4s ease;
+      overflow-y: auto;
+    }
+
+    /* Default desktop slide from right */
+    #subscribe-panel {
+      top: 20%;
+      right: 0;
+      transform: translateX(100%);
+      border-radius: 8px 0 0 8px;
     }
 
     #subscribe-panel.open {
-      right: 0;
+      transform: translateX(0%);
     }
 
+    /* Panel content styles */
     #subscribe-panel h3 {
       color: var(--gold);
       margin-top: 0;
@@ -155,21 +165,49 @@
     #subscribe-panel input[type="email"] {
       width: 100%;
       padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px 0;
       border: none;
       border-radius: 4px;
+      font-size: 1em;
     }
 
+    #subscribe-panel input[type="submit"],
     #subscribe-panel button {
       width: 100%;
-      background: var(--gold);
+      background: #d4af37;
       color: #000;
       padding: 10px;
       border: none;
       font-weight: bold;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 1em;
+    }
+
+    /* MOBILE STYLING */
+    @media (max-width: 768px) {
+      #subscribe-toggle {
+        top: unset;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        padding: 12px 15px;
+        font-size: 0.9em;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      #subscribe-panel {
+        top: unset;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        transform: translateY(100%);
+      }
+
+      #subscribe-panel.open {
+        transform: translateY(0%);
+      }
     }
   </style>
 </head>
@@ -207,9 +245,11 @@
   <div id="subscribe-panel">
     <h3>Get Updates</h3>
     <p style="font-size: 0.9em;">Join the newsletter for book releases and myth-inspired content.</p>
-    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY" method="post" target="_blank" novalidate>
+    <!-- Mailchimp Embed Form -->
+    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY"
+          method="post" target="_blank" novalidate>
       <input type="email" name="EMAIL" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
+      <input type="submit" value="Subscribe">
     </form>
   </div>
 
