@@ -14,7 +14,6 @@ html, body {
   padding: 0;
 }
 
-
 body {
   background-color: #fff;
   color: #111;
@@ -28,18 +27,26 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #fff;  /* <-- Add this line */
+  background-color: #fff;
 }
 
 main {
   flex: 1;
   padding: 60px 20px;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px; /* Increased from 800px for better screen usage */
   margin: 40px auto;
   color: #111;
-  background: none; /* Remove card background if set */
+  background: none;
   box-shadow: none;
   border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 40px 16px;
+    max-width: 100%;
+  }
 }
 
 /* Header */
@@ -84,6 +91,7 @@ nav {
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   box-shadow: inset 0 0 8px var(--gloss);
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -115,13 +123,15 @@ nav a:hover::after {
   width: 100%;
 }
 
+/* Layout container override */
 .container-lg,
 .container-xl,
 .container {
-  max-width: 95vw; /* or 1000px or auto */
+  max-width: 100%;
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0 auto;
 }
 
 /* Footer */
