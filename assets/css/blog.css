@@ -1,7 +1,6 @@
 .blog-layout {
   display: flex;
   gap: 2rem;
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -20,7 +19,6 @@
 
 .blog-sidebar input,
 .blog-sidebar select {
-  width: 100%;
   padding: 0.6em 1em;
   font-size: 1rem;
   border: 1px solid #ccc;
