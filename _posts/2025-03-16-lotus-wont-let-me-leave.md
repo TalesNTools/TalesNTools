@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Why Can’t He Leave the Hospital Despite Being Discharged?"
+title: "Why Can’t He Leave the Hospital Despite Being Discharged?"
 date: 2025-03-16
 author: Tales N Tools
 image: /assets/images/posts/Depositphotos_23142704_XL.jpg
