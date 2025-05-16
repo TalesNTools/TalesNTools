@@ -2,7 +2,7 @@
 layout: post
 title: “What Awaits You on the Furies’ Train to Tartarus?”
 date: 2025-03-17
-image: /assets/images/posts/Depositphotos_665959126_XL.jpg
+image: /assets/images/posts/Depositphotos_665959126_XL.webp
 categories: [Creative Spark, Myth-Inspired Fiction]
 ---
 
