@@ -128,24 +128,26 @@
       cursor: pointer;
       z-index: 1000;
       box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: opacity 0.4s ease;
     }
 
-    /* Subscribe Panel (Desktop default: right slide-in) */
+    #subscribe-toggle.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Subscribe Panel */
     #subscribe-panel {
       position: fixed;
       background: var(--mid-bg);
       color: #eee;
       padding: 20px;
       width: 300px;
-      max-width: 100%;
+      max-width: 90vw;
       box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.6);
       z-index: 999;
       transition: transform 0.4s ease;
       overflow-y: auto;
-    }
-
-    /* Default desktop slide from right */
-    #subscribe-panel {
       top: 20%;
       right: 0;
       transform: translateX(100%);
@@ -156,7 +158,6 @@
       transform: translateX(0%);
     }
 
-    /* Panel content styles */
     #subscribe-panel h3 {
       color: var(--gold);
       margin-top: 0;
@@ -171,10 +172,9 @@
       font-size: 1em;
     }
 
-    #subscribe-panel input[type="submit"],
-    #subscribe-panel button {
+    #subscribe-panel input[type="submit"] {
       width: 100%;
-      background: #d4af37;
+      background: var(--gold);
       color: #000;
       padding: 10px;
       border: none;
@@ -184,7 +184,6 @@
       font-size: 1em;
     }
 
-    /* MOBILE STYLING */
     @media (max-width: 768px) {
       #subscribe-toggle {
         top: unset;
@@ -193,14 +192,15 @@
         border-radius: 50%;
         padding: 12px 15px;
         font-size: 0.9em;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
       }
 
       #subscribe-panel {
         top: unset;
         bottom: 0;
         right: 0;
-        width: 100%;
+        left: 0;
+        margin: auto;
+        width: 95%;
         border-radius: 12px 12px 0 0;
         transform: translateY(100%);
       }
@@ -245,9 +245,7 @@
   <div id="subscribe-panel">
     <h3>Get Updates</h3>
     <p style="font-size: 0.9em;">Join the newsletter for book releases and myth-inspired content.</p>
-    <!-- Mailchimp Embed Form -->
-    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY"
-          method="post" target="_blank" novalidate>
+    <form id="subscribe-form" action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY" method="post" target="_blank" novalidate>
       <input type="email" name="EMAIL" placeholder="Your email address" required>
       <input type="submit" value="Subscribe">
     </form>
@@ -256,9 +254,19 @@
   <script>
     const toggle = document.getElementById('subscribe-toggle');
     const panel = document.getElementById('subscribe-panel');
+    const form = document.getElementById('subscribe-form');
 
     toggle.addEventListener('click', () => {
       panel.classList.toggle('open');
+      toggle.classList.toggle('hidden');
+    });
+
+    // Auto-close panel after submit
+    form.addEventListener('submit', () => {
+      setTimeout(() => {
+        panel.classList.remove('open');
+        toggle.classList.remove('hidden');
+      }, 1500); // Wait 1.5s before closing (adjust if needed)
     });
   </script>
 </body>
