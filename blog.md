@@ -49,6 +49,7 @@ permalink: /blog/
   </section>
 </div>
 
+
 <script>
   const searchBox = document.getElementById("searchBox");
   const categoryFilter = document.getElementById("categoryFilter");
