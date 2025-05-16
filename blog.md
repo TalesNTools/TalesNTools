@@ -4,13 +4,55 @@ title: Blog
 permalink: /blog/
 ---
 
+<style>
+  .blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-filters input,
+  .blog-filters select {
+    padding: 0.6em 1em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border 0.2s ease-in-out, background 0.2s;
+    flex: 1 1 300px;
+  }
+
+  .blog-filters input:focus,
+  .blog-filters select:focus {
+    border-color: #007acc;
+    background-color: #fff;
+    outline: none;
+  }
+
+  #postsList li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  #postsList li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+  }
+
+  #postsList li small {
+    color: #888;
+    font-size: 0.9rem;
+  }
+</style>
+
 <h2>Blog</h2>
 
-<!-- Search + Filter UI -->
-<div style="margin-bottom: 1.5em;">
-  <input type="text" id="searchBox" placeholder="Search posts..." style="padding: 0.5em; width: 60%; max-width: 300px;" />
+<div class="blog-filters">
+  <input type="text" id="searchBox" placeholder="Search posts..." />
 
-  <select id="categoryFilter" style="padding: 0.5em; margin-left: 1em;">
+  <select id="categoryFilter">
     <option value="all">All Categories</option>
     {% assign all_categories = "" | split: "" %}
     {% for post in site.posts %}
@@ -25,7 +67,6 @@ permalink: /blog/
   </select>
 </div>
 
-<!-- Posts List -->
 <ul id="postsList">
   {% for post in site.posts %}
     <li 
@@ -37,7 +78,6 @@ permalink: /blog/
   {% endfor %}
 </ul>
 
-<!-- Filtering Script -->
 <script>
   const searchBox = document.getElementById("searchBox");
   const categoryFilter = document.getElementById("categoryFilter");
