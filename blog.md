@@ -1,8 +1,8 @@
-—-
+—
 layout: default
 title: Blog
 permalink: /blog/
-—-
+—
 
 ## All Posts
 
