@@ -1,3 +1,6 @@
+Here's the full, updated CSS code with the **larger responsive header logo on mobile** and improvements to ensure consistent scaling:
+
+```css
 :root {
   --gold: #d4af37;
   --gold-glow: linear-gradient(145deg, #f0d75a, #c0981f);
@@ -49,6 +52,12 @@ main {
   background: var(--mid-bg);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
   position: relative;
+  width: 100%;
+}
+
+.site-header .container {
+  max-width: none;
+  width: 100%;
 }
 
 .site-header::after {
@@ -62,34 +71,36 @@ main {
 }
 
 .site-logo {
-  width: 100%;
-  max-width: 260px;
+  width: 35%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
-}
-
-@media (max-width: 768px) {
-  main {
-    padding: 40px 16px;
-    max-width: 100%;
-  }
-
-  .site-logo {
-    max-width: 160px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .site-logo {
-    max-width: 300px;
-  }
 }
 
 .site-header p {
   margin-top: 10px;
   color: var(--muted-text);
   font-size: 1.1em;
+}
+
+/* Responsive logo adjustments */
+@media (max-width: 768px) {
+  .site-logo {
+    max-width: 240px;
+    width: 60%;
+  }
+
+  main {
+    padding: 40px 16px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .site-logo {
+    max-width: 340px;
+  }
 }
 
 /* Navigation */
@@ -154,3 +165,6 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid #222;
 }
+```
+
+Let me know if you also want the logo to be clickable (e.g., link back to the homepage), aligned differently, or animated.
