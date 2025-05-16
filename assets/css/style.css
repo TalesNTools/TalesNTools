@@ -34,7 +34,7 @@ main {
   flex: 1;
   padding: 60px 20px;
   width: 100%;
-  max-width: 1200px; /* Increased from 800px for better screen usage */
+  max-width: 1400px; /* Increased from 800px for better screen usage */
   margin: 40px auto;
   color: #111;
   background: none;
