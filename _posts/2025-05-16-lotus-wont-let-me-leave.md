@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: “I Was Discharged from the Hospital… But the Lotus Wouldn’t Let Me Leave”
 date: 2025-05-16
 author: Tales N Tools
