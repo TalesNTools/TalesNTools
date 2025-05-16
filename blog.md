@@ -2,7 +2,11 @@
 layout: default
 title: Blog
 permalink: /blog/
+<<<<<<< HEAD:blog.md
+—
+=======
 ---
+>>>>>>> main:creative-spark.md
 
 ## All Posts
 
