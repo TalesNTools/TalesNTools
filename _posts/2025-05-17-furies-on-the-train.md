@@ -1,7 +1,7 @@
 ---
 layout: post
 title: “I Took the Train Home… But the Furies Were Waiting”
-date: 2025-05-17
+date: 2025-05-16
 categories: [Creative Spark, Myth-Inspired Fiction]
 ---
 
