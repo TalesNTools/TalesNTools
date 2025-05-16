@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When I Was Visited by the Dryad"
+title: "Whats happens when a man meets a Dryad in a storm?"
 date: 2025-03-19
 categories: ["Creative Spark", "Myth-Inspired Fiction"]
 ---
