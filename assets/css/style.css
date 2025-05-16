@@ -34,7 +34,7 @@ main {
   flex: 1;
   padding: 60px 20px;
   width: 100%;
-  max-width: 1200px; /* Increased from 800px for better screen usage */
+  max-width: 1200px;
   margin: 40px auto;
   color: #111;
   background: none;
@@ -47,18 +47,22 @@ main {
     padding: 40px 16px;
     max-width: 100%;
   }
+
+  .site-logo {
+    max-width: 220px;
+  }
 }
 
-/* Header */
-header {
-  background: var(--mid-bg);
-  padding: 40px 20px;
+/* Header with image logo */
+.site-header {
   text-align: center;
+  padding: 40px 20px;
+  background: var(--mid-bg);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
   position: relative;
 }
 
-header::after {
+.site-header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -68,14 +72,14 @@ header::after {
   background: var(--gold-glow);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 3em;
-  color: var(--gold);
-  text-shadow: 1px 1px 4px #000;
+.site-logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-header p {
+.site-header p {
   margin-top: 10px;
   color: var(--muted-text);
   font-size: 1.1em;
