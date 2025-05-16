@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “I Was Discharged from the Hospital… But the Lotus Wouldn’t Let Me Leave”
+title: “Why can't he leave the hospital despite being discharged?”
 date: 2025-03-16
 author: Tales N Tools
 categories: [Creative Spark, Myth-Inspired Fiction]
