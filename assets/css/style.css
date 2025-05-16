@@ -1,6 +1,3 @@
-Here's the full, updated CSS code with the **larger responsive header logo on mobile** and improvements to ensure consistent scaling:
-
-```css
 :root {
   --gold: #d4af37;
   --gold-glow: linear-gradient(145deg, #f0d75a, #c0981f);
@@ -165,6 +162,5 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid #222;
 }
-```
 
 Let me know if you also want the logo to be clickable (e.g., link back to the homepage), aligned differently, or animated.
