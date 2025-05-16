@@ -70,11 +70,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  main {
-    padding: 40px 16px;
-    max-width: 100%;
-  }
-
   .site-logo {
     max-width: 160px;
   }
@@ -82,9 +77,10 @@ main {
 
 @media (min-width: 1400px) {
   .site-logo {
-    max-width: 300px;
+    max-width: 320px;
   }
 }
+
 
 .site-header p {
   margin-top: 10px;
