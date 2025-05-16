@@ -68,8 +68,7 @@ main {
 }
 
 .site-logo {
-  width: 100%;
-  max-width: 260px;
+  width: 50%;
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
