@@ -1,0 +1,48 @@
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-filters input,
+.blog-filters select {
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border 0.2s ease-in-out, background 0.2s;
+  flex: 1 1 300px;
+}
+
+.blog-filters input:focus,
+.blog-filters select:focus {
+  border-color: #007acc;
+  background-color: #fff;
+  outline: none;
+}
+
+#postsList li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+#postsList li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+}
+
+#postsList li small {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+#postsList li img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
