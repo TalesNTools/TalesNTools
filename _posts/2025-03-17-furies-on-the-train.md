@@ -21,11 +21,11 @@ Air snags in my lungs as I clutch my bag, panic rising fast and sharp. What is g
 
 I shake my head and try to breathe. Think. Think. I walk through my memory: I left work, went to the bar, boarded the train home — and now I’m here. That’s when I hear it — a voice, soft and cold, just over my shoulder.
 
-> “Do you remember?”
+“Do you remember?”
 
 I gasp and spin around, locking eyes with something no longer human. Their eyes burn with hatred, their forms twisted and unnatural — faces stretched into something wrong. Something ancient. I stagger back and throw my bag at the nearest one, then bolt toward the front of the train. But by the time I glance behind me — they’re already there.
 
-> “Do you remember?” they ask in unison, voices echoing, vibrating in my skull.
+“Do you remember?” they ask in unison, voices echoing, vibrating in my skull.
 
 “Remember what?” I shout, heart pounding, spine pressed hard against the wall of the train car. I can’t go any further. I’m trapped. “Who… what are you?”
 
@@ -33,7 +33,7 @@ They chuckle, low and guttural, as they move closer. Their presence is suffocati
 
 I was drunk — but that doesn’t make it right. It never did. The memory coils through me like poison, shame gripping tighter than fear. I see his face too — the one who caught me in the act. A boyfriend? A friend? I don’t know. I only remember the rage in his eyes… and the sound that followed. A single, sharp bang. Then nothing. Just silence. And after that… the train.
 
-> “Good,” one of them hissed, fingers reaching for my collar. “Now, you’ll know the same suffering.”
+“Good,” one of them hissed, fingers reaching for my collar. “Now, you’ll know the same suffering.”
 
 They pulled my shirt open, buttons snapping and scattering across the floor. I tried to fight back, but they were too strong. Panic clawed at my throat. What was happening?
 
