@@ -1,7 +1,7 @@
 ---
 layout: post
 title: “I Was Discharged from the Hospital… But the Lotus Wouldn’t Let Me Leave”
-date: 2025-05-16
+date: 2025-03-16
 author: Tales N Tools
 categories: [Creative Spark, Myth-Inspired Fiction]
 ---
