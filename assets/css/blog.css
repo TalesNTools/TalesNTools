@@ -45,9 +45,9 @@
 }
 
 #postsList li img {
-  max-width: 300px;
+  width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
   margin-bottom: 0.5rem;
+  display: block;
 }
