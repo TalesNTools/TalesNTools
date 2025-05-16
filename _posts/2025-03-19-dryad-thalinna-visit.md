@@ -2,6 +2,7 @@
 layout: post
 title: “What Happens When a Man Meets a Dryad in a Storm?”
 date: 2025-03-19
+image: /assets/images/posts/Depositphotos_211295964_XL.jpg
 categories: ["Creative Spark", "Myth-Inspired Fiction"]
 ---
 *Photo by Kotenko on Deposit Photos*
