@@ -15,12 +15,8 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <header class="site-header">
-      <a href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/images/posts/Header-Logo.webp' | relative_url }}" alt="Tales N Tools Logo" class="site-logo">
-      </a>
-      <p>Author of Young Adult & Dark Fantasy Romance</p>
-    </header>
+
+    {% include header.html %}
 
     <main>
       {{ content }}
