@@ -23,6 +23,11 @@
   outline: none;
 }
 
+#postsList {
+  list-style: none;
+  padding-left: 0;
+}
+
 #postsList li {
   margin-bottom: 1rem;
   line-height: 1.4;
