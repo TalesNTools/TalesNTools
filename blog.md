@@ -1,7 +1,7 @@
 —
 layout: default
-title: Creative Spark
-permalink: /creative-spark/
+title: Blog
+permalink: /blog/
 —
 
 ## All Posts
