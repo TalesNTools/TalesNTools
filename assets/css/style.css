@@ -1,12 +1,23 @@
+:root {
+  --gold: #d4af37;
+  --gold-glow: linear-gradient(145deg, #f0d75a, #c0981f);
+  --dark-bg: #0b0b0b;
+  --mid-bg: #1a1a1a;
+  --gloss: rgba(255, 255, 255, 0.05);
+  --light-text: #eee;
+  --muted-text: #aaa;
+}
+
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #0b0b0b;
-  color: #eee;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -27,46 +38,85 @@ main {
   margin: auto;
 }
 
+/* Header */
 header {
-  background: #1a1a1a;
+  background: var(--mid-bg);
   padding: 40px 20px;
   text-align: center;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gold-glow);
 }
 
 header h1 {
   margin: 0;
   font-size: 3em;
-  color: #d4af37;
+  color: var(--gold);
+  text-shadow: 1px 1px 4px #000;
 }
 
 header p {
   margin-top: 10px;
-  color: #aaa;
+  color: var(--muted-text);
+  font-size: 1.1em;
 }
 
+/* Navigation */
 nav {
   background: linear-gradient(to right, #101010, #191919);
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 15px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  box-shadow: inset 0 0 8px var(--gloss);
 }
 
 nav a {
-  color: #eee;
+  color: var(--light-text);
   text-decoration: none;
   font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--gold);
+  width: 0;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 nav a:hover {
-  color: #d4af37;
+  color: var(--gold);
 }
 
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 30px 20px;
-  background: #1a1a1a;
-  color: #aaa;
+  background: var(--mid-bg);
+  color: var(--muted-text);
   font-size: 0.9em;
+  border-top: 1px solid #222;
 }
