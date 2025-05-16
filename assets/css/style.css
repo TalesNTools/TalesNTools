@@ -16,9 +16,9 @@ html, body {
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff; /* previously var(--dark-bg) */
+  background-color: #fff;
   color: #111;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,9 @@ main {
   max-width: 800px;
   margin: 40px auto;
   color: #111;
+  background: none; /* Remove card background if set */
+  box-shadow: none;
+  border-radius: 0;
 }
 
 /* Header */
