@@ -45,14 +45,13 @@ border-radius: 0;
 }
 
 /\* Header with responsive logo image \*/
-header,
 .site-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: var(--mid-bg);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-  position: relative;
-  width: 100%;
+text-align: center;
+padding: 40px 20px;
+background: var(--mid-bg);
+box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+position: relative;
+width: 100%;
 }
 
 .site-header .container {
@@ -148,12 +147,11 @@ margin: 0 auto;
 }
 
 /\* Footer \*/
-footer,
-.site-footer {
-  text-align: center;
-  padding: 30px 20px;
-  background: var(--mid-bg);
-  color: var(--muted-text);
-  font-size: 0.9em;
-  border-top: 1px solid #222;
+footer {
+text-align: center;
+padding: 30px 20px;
+background: var(--mid-bg);
+color: var(--muted-text);
+font-size: 0.9em;
+border-top: 1px solid #222;
 }
