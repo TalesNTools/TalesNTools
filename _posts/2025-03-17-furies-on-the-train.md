@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “What awaits you on the Furies' train to Tartarus?”
+title: “What Awaits You on the Furies’ Train to Tartarus?”
 date: 2025-03-17
 categories: [Creative Spark, Myth-Inspired Fiction]
 ---
