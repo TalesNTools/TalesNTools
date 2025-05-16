@@ -1,0 +1,37 @@
+<div id="subscribe-toggle">Subscribe</div>
+
+<div id="subscribe-panel">
+  <div id="subscribe-close">
+    <button aria-label="Close newsletter panel">&times;</button>
+  </div>
+  <h3>Get Updates</h3>
+  <p style="font-size: 0.9em;">Join the newsletter for book releases and myth-inspired content.</p>
+  <form id="subscribe-form" action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY" method="post" target="_blank" novalidate>
+    <input type="email" name="EMAIL" placeholder="Your email address" required>
+    <input type="submit" value="Subscribe">
+  </form>
+</div>
+
+<script>
+  const toggle = document.getElementById('subscribe-toggle');
+  const panel = document.getElementById('subscribe-panel');
+  const form = document.getElementById('subscribe-form');
+  const closeBtn = document.querySelector('#subscribe-close button');
+
+  toggle.addEventListener('click', () => {
+    panel.classList.toggle('open');
+    toggle.classList.toggle('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    panel.classList.remove('open');
+    toggle.classList.remove('hidden');
+  });
+
+  form.addEventListener('submit', () => {
+    setTimeout(() => {
+      panel.classList.remove('open');
+      toggle.classList.remove('hidden');
+    }, 1500);
+  });
+</script>
