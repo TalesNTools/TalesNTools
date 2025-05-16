@@ -36,12 +36,6 @@ permalink: /blog/
 
       <a href=“{{ post.url }}”>{{ post.title }}</a> – 
       <small>{{ post.date | date_to_string }}</small>
-
-      {% if post.teaser %}
-        <p>{{ post.teaser }}</p>
-      {% else %}
-        <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
