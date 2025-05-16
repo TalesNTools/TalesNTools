@@ -1,8 +1,8 @@
-—
+---
 layout: default
 title: Creative Spark
 permalink: /creative-spark/
-—
+---
 
 ## All Posts
 
