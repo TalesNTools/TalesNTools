@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “What Happens When a Man Meets a Dryad in a Storm?“
+title: “What Happens When a Man Meets a Dryad in a Storm?”
 date: 2025-03-19
 categories: ["Creative Spark", "Myth-Inspired Fiction"]
 ---
