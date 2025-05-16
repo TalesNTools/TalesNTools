@@ -113,6 +113,64 @@
       font-size: 0.9em;
       border-top: 1px solid #222;
     }
+
+    /* Floating Subscribe Panel */
+    #subscribe-toggle {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      background: var(--gold);
+      color: #000;
+      padding: 12px 18px;
+      font-weight: bold;
+      border-radius: 6px 0 0 6px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    #subscribe-panel {
+      position: fixed;
+      right: -320px;
+      top: 30%;
+      width: 300px;
+      background: var(--mid-bg);
+      padding: 20px;
+      border-radius: 8px 0 0 8px;
+      box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.6);
+      color: #eee;
+      z-index: 999;
+      transition: right 0.4s ease;
+    }
+
+    #subscribe-panel.open {
+      right: 0;
+    }
+
+    #subscribe-panel h3 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    #subscribe-panel input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #subscribe-panel button {
+      width: 100%;
+      background: var(--gold);
+      color: #000;
+      padding: 10px;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -142,5 +200,26 @@
   <footer>
     &copy; 2025 Tales N Tools. All rights reserved.
   </footer>
+
+  <!-- Floating Subscribe Button and Panel -->
+  <div id="subscribe-toggle">Subscribe</div>
+
+  <div id="subscribe-panel">
+    <h3>Get Updates</h3>
+    <p style="font-size: 0.9em;">Join the newsletter for book releases and myth-inspired content.</p>
+    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXX&amp;id=YYYYY" method="post" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('subscribe-toggle');
+    const panel = document.getElementById('subscribe-panel');
+
+    toggle.addEventListener('click', () => {
+      panel.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
